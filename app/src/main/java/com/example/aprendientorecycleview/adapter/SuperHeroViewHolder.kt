@@ -1,6 +1,7 @@
 package com.example.aprendientorecycleview.adapter
 
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.aprendientorecycleview.R
@@ -12,7 +13,7 @@ class SuperHeroViewHolder (view: View): RecyclerView.ViewHolder(view){
     val superHero = view.findViewById<TextView>(R.id.tvSuperHeroName)
     val publisher = view.findViewById<TextView>(R.id.tvPublisher)
     val realName = view.findViewById<TextView>(R.id.tvSuperHeroRealName)
-    val photo = view.findViewById<TextView>(R.id.ivSuperHero)
+    val photo = view.findViewById<ImageView>(R.id.ivSuperHero)
 
 
     fun render(superHeroModel: SuperHero){

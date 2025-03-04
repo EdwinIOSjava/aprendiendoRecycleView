@@ -5,6 +5,7 @@ import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.aprendientorecycleview.adapter.SuperHeroAdapter
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     //superHeroProvider.superHeroList
  private  fun initRecyclerView(){
-        val recyclerView=findViewById<View>(R.id.recycleSuperHero)
+        val recyclerView = findViewById<RecyclerView>(R.id.recycleSuperHero)// este era el error , tocaba poner recycler view
         recyclerView.layoutManager=LinearLayoutManager(this)
         recyclerView.adapter= SuperHeroAdapter(SuperHeroProvider.superHeroList)
 
